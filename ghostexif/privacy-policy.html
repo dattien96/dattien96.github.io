@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GhostExif — Privacy Policy</title>
+<style>
+  :root { color-scheme: dark; }
+  body { margin: 0; background: #070A0F; color: #e8eef7;
+         font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 820px; margin: 0 auto; padding: 40px 20px 80px; }
+  h1 { font-size: 1.7rem; margin: 0 0 4px; }
+  h2 { font-size: 1.15rem; margin: 34px 0 8px; color: #a5f3fc; }
+  .meta { color: #94a3b8; font-size: .9rem; margin-bottom: 24px; }
+  .warn { border-left: 3px solid #e0a34a; background: #1a1408; padding: 12px 14px; margin: 18px 0; }
+  ul { padding-left: 22px; }
+  li { margin: 6px 0; }
+  table { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: .95rem; }
+  th, td { border: 1px solid #1e293b; padding: 8px 10px; text-align: left; vertical-align: top; }
+  th { background: #0e131f; }
+  code { background: #0e131f; padding: 1px 5px; border-radius: 4px; }
+  a { color: #22d3ee; }
+  footer { margin-top: 48px; color: #94a3b8; font-size: .85rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>GhostExif — Privacy Policy</h1>
+  <p class="meta">Applies to the GhostExif Android app · Effective 5 November 2026 · Version 1.0</p>
+
+  <p>GhostExif is an offline-first privacy tool that removes sensitive metadata (GPS coordinates, camera
+  serial numbers, embedded thumbnails, XMP fields, PNG chunks and MP4/MOV container atoms) from photos
+  and videos. Everything is processed <strong>on your device</strong>: the files you pick are never uploaded,
+  and no user account is created. This policy explains exactly what stays on your device and what third-party
+  advertising and purchase libraries collect.</p>
+
+  <h2>1. What we never collect or transmit</h2>
+  <ul>
+    <li><strong>Your photos, videos or files</strong> — processed entirely on this device in memory and local
+        storage. We never upload or receive them.</li>
+    <li><strong>Location data</strong> — GhostExif <em>strips</em> GPS location; it never requests the device location
+        permission and never transmits coordinates.</li>
+    <li><strong>Metadata values</strong> — Exif, XMP, IPTC, and container atoms are read only for on-screen
+        inspection and local cleaning; none are sent to any remote server.</li>
+  </ul>
+  <p>The app never uploads any of the above. When you choose to share a cleaned file via Android's Share Sheet,
+  that transfer is directed entirely by you to the target application you choose.</p>
+
+  <h2>2. What we do not collect</h2>
+  <p>No user account, name, email address, phone number, contacts, gallery album listings or browsing history.
+  The app does not create a profile of you.</p>
+
+  <h2>3. Third-party SDKs and what they collect</h2>
+  <table>
+    <tr><th>SDK</th><th>Purpose</th><th>Data involved</th></tr>
+    <tr>
+      <td>Google AdMob</td>
+      <td>Optional rewarded ads that refill Free cleaning passes</td>
+      <td>Advertising ID (reset/deletable in Android Settings), device and app metrics, IP address (approximate
+          location derived from it), ad interaction data. Governed by Google's own policies.</td>
+    </tr>
+    <tr>
+      <td>RevenueCat</td>
+      <td>Subscription / lifetime-license management</td>
+      <td>A pseudonymous app user identifier and purchase/subscription status. No payment card data reaches us
+          or RevenueCat — purchases are processed by Google Play.</td>
+    </tr>
+    <tr>
+      <td>Google User Messaging Platform (UMP)</td>
+      <td>Ad consent (EEA/UK) and privacy options</td>
+      <td>Your consent choice and a consent identifier. The consent form is shown when required by law; to change
+          your choice later, reset or delete your advertising ID in Android settings.</td>
+    </tr>
+    <tr>
+      <td>Google Play Billing</td>
+      <td>Processing payments</td>
+      <td>Handled entirely by Google Play under Google's terms.</td>
+    </tr>
+  </table>
+  <p><strong>Not included in this version:</strong> crash reporting or product analytics SDKs.
+  If a future version adds one, this policy and the store Data Safety declaration will be updated before that version ships.</p>
+
+  <h2>4. Permissions and why they exist</h2>
+  <ul>
+    <li><strong>Android System Picker (Photo Picker / SAF)</strong> — you choose which media to inspect or clean.
+        The app requests no broad storage permission (<code>READ/WRITE/MANAGE_EXTERNAL_STORAGE</code>) and uses
+        only the temporary URI grants provided by the system picker.</li>
+    <li><strong>Notifications (Android 13+)</strong> — shows progress and completion of batch cleaning jobs in the background.</li>
+    <li><strong>Foreground service (data sync)</strong> — ensures batch scrubbing of large video files completes
+        without interruption if the screen turns off.</li>
+    <li><strong>Internet, network state</strong> — strictly for rewarded ads, purchase verification, and license validation.
+        Media scrubbing operations work fully offline.</li>
+  </ul>
+
+  <h2>5. Retention and deletion</h2>
+  <ul>
+    <li>Cleaned copies are written to the app's private sandbox, or to the public media collection (Pictures/Movies)
+        so your gallery can see them, depending on your settings. Uninstalling GhostExif removes its private storage
+        and preferences.</li>
+    <li>Original files remain untouched unless you explicitly choose to delete them through the app's media deletion
+        prompt, which delegates to Android's system MediaStore delete confirmation.</li>
+    <li>Ad-related data is retained by Google according to your Google ad settings; you can reset or delete your
+        advertising ID in Android settings.</li>
+    <li>Purchase records are retained by Google Play (and RevenueCat) as required for billing and tax obligations.</li>
+  </ul>
+  <p><strong>Deletion requests.</strong> Because the app holds your content only on your device, the fastest deletion
+  is uninstalling it; nothing else needs to be asked of us. For customer purchase records on RevenueCat, you can
+  request deletion through the contact channel in section 10.</p>
+
+  <h2>6. Your controls</h2>
+  <ul>
+    <li>Turn off ad personalization (Android Settings &gt; Privacy &gt; Ads), or simply do not watch the optional rewarded ads.</li>
+    <li>Manage or cancel a subscription in Google Play &gt; Subscriptions.</li>
+    <li>Delete local data by uninstalling the app. There is no server-side copy to erase.</li>
+  </ul>
+
+  <h2>7. Children</h2>
+  <p>GhostExif is not directed to children under 13 and does not knowingly collect personal information from them.</p>
+
+  <h2>8. International users</h2>
+  <p>The app itself transfers no personal data to us. The SDKs listed in section 3 process data in the regions
+  described in their own privacy policies. Where local law grants you rights of access, correction or deletion,
+  those rights apply to the data held by those providers; the app holds your content only on your device.</p>
+
+  <h2>9. Changes</h2>
+  <p>If this policy changes materially, the effective date above is updated and the new version is published at this
+  URL before the affected app version is released.</p>
+
+  <h2>10. Operator and contact</h2>
+  <p>GhostExif is published by an independent developer based in Vietnam.</p>
+  <p><strong>Data requests and contact:</strong>
+  <a id="contact-email" href="mailto:redsquirrelstudio0525@gmail.com">redsquirrelstudio0525@gmail.com</a>.
+  This channel is used for privacy and data-deletion requests.</p>
+  <p>Questions: use the address above. Please do not post personal data in a public issue tracker.</p>
+
+  <footer>GhostExif · <a href="./privacy-policy.html">Privacy Policy</a> · <a href="./terms-of-service.html">Terms of Service</a></footer>
+</main>
+</body>
+</html>
